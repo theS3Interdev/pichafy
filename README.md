@@ -66,7 +66,7 @@ transformations
 user-friendly interface and many more, including code architecture and
 reusability.
 
-## <a name="quick-start">🤸 Quick Start</a>
+## 🤸 Quick Start</a>
 
 Follow these steps to set up the project locally on your machine.
 
