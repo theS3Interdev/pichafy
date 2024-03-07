@@ -1,4 +1,4 @@
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+const AppRootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<main className="root">
 			<div className="root-container">
@@ -8,4 +8,4 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	);
 };
 
-export default RootLayout;
+export default AppRootLayout;
