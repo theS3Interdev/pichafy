@@ -256,7 +256,7 @@ export const TransformationForm = ({
 							control={form.control}
 							name="prompt"
 							formLabel={
-								type === "remove" ? "Object to remove" : "Object to recolor"
+								type === "remove" ? "Object to Remove" : "Object to Recolor"
 							}
 							className="w-full"
 							render={({ field }) => (
@@ -335,6 +335,7 @@ export const TransformationForm = ({
 					>
 						{isTransforming ? "Transforming..." : "Apply Transformation"}
 					</Button>
+
 					<Button
 						type="submit"
 						className="submit-button capitalize"
