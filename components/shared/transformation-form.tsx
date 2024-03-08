@@ -8,15 +8,7 @@ import { useForm } from "react-hook-form";
 import { getCldImageUrl } from "next-cloudinary";
 
 import { Button } from "@/components/ui/button";
-import {
-	Form,
-	FormControl,
-	FormDescription,
-	FormField,
-	FormItem,
-	FormLabel,
-	FormMessage,
-} from "@/components/ui/form";
+import { Form } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import {
 	Select,
@@ -220,6 +212,7 @@ export const TransformationForm = ({
 		<Form {...form}>
 			<form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
 				{creditBalance < Math.abs(creditFee) && <InsufficientCreditsModal />}
+
 				<CustomField
 					control={form.control}
 					name="title"
@@ -244,6 +237,7 @@ export const TransformationForm = ({
 								<SelectTrigger className="select-field">
 									<SelectValue placeholder="Select size" />
 								</SelectTrigger>
+
 								<SelectContent>
 									{Object.keys(aspectRatioOptions).map((key) => (
 										<SelectItem key={key} value={key} className="select-item">
