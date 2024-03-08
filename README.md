@@ -1,4 +1,4 @@
-# Pichafy AI SaaS
+# Pichafy AI
 
 ## 📋 Table of Contents
 
@@ -25,7 +25,7 @@ recoloring, object removal, generative filling, and background removal.
 - Shadcn
 - TailwindCSS
 
-## 🔋 Features</a>
+## 🔋 Features
 
 👉 **Authentication and Authorization**: Secure user access with registration,
 login, and route protection.
@@ -66,7 +66,7 @@ transformations
 user-friendly interface and many more, including code architecture and
 reusability.
 
-## 🤸 Quick Start</a>
+## 🤸 Quick Start
 
 Follow these steps to set up the project locally on your machine.
 
@@ -123,10 +123,7 @@ NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
 CLOUDINARY_API_KEY=
 CLOUDINARY_API_SECRET=
 
-#STRIPE
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECRET=
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+#PAYPAL
 ```
 
 Replace the placeholder values with your actual respective account credentials.
