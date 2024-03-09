@@ -38,7 +38,7 @@ export const MediaUploader = ({
 
 		toast({
 			title: "Image uploaded successfully",
-			description: "1 credit was deducted from your account",
+			description: "1 credit was deducted from your account.",
 			duration: 5000,
 			className: "success-toast",
 		});
@@ -47,7 +47,7 @@ export const MediaUploader = ({
 	const onUploadErrorHandler = () => {
 		toast({
 			title: "Something went wrong while uploading",
-			description: "Please try again",
+			description: "Please try again.",
 			duration: 5000,
 			className: "error-toast",
 		});

@@ -13,7 +13,7 @@ const IBMPlex = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-	title: "pichafy - AI Powered Image Generator",
+	title: "Pichafy - AI Powered Image Generator",
 	description: "Artificicial Intelligence powered image generator.",
 };
 
