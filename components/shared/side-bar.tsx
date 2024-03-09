@@ -23,7 +23,7 @@ export const SideBar = () => {
 						height={34}
 					/>
 
-					<p className="text-sky-500 text-3xl font-semibold">pichafy.ai</p>
+					<p className="text-sky-500 text-3xl font-semibold">pichafy</p>
 				</Link>
 
 				<nav className="sidebar-nav">
