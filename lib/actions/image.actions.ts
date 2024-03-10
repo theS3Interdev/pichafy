@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { v2 as cloudinary } from "cloudinary";
 
-import { connectToDatabase } from "@/lib//data/mongoose";
+import { connectToDatabase } from "@/lib/data/mongoose";
 import { handleError } from "@/lib/utils";
 import Image from "@/lib/data/models/image.model";
 import User from "@/lib/data/models/user.model";
@@ -24,7 +24,7 @@ export async function addImage({ image, userId, path }: AddImageParams) {
 		const author = await User.findById(userId);
 
 		if (!author) {
-			throw new Error("User not found");
+			throw new Error("User not found.");
 		}
 
 		const newImage = await Image.create({
@@ -48,7 +48,7 @@ export async function updateImage({ image, userId, path }: UpdateImageParams) {
 		const imageToUpdate = await Image.findById(image._id);
 
 		if (!imageToUpdate || imageToUpdate.author.toHexString() !== userId) {
-			throw new Error("Unauthorized or image not found");
+			throw new Error("Unauthorized access or image not found.");
 		}
 
 		const updatedImage = await Image.findByIdAndUpdate(
@@ -85,7 +85,7 @@ export async function getImageById(imageId: string) {
 
 		const image = await populateUser(Image.findById(imageId));
 
-		if (!image) throw new Error("Image not found");
+		if (!image) throw new Error("Image not found.");
 
 		return JSON.parse(JSON.stringify(image));
 	} catch (error) {
