@@ -21,7 +21,7 @@ recoloring, object removal, generative filling, and background removal.
 - MongoDB
 - Clerk
 - Cloudinary
-- Stripe
+- PayPal
 - Shadcn
 - TailwindCSS
 
@@ -60,7 +60,7 @@ transformations
 
 👉 **Profile Page**: Access transformed images and credit information personally
 
-👉 **Credits Purchase**: Securely buy credits via Stripe for uninterrupted use
+👉 **Credits Purchase**: Securely buy credits via PayPal for uninterrupted use
 
 👉 **Responsive UI/UX**: A seamless experience across devices with a
 user-friendly interface and many more, including code architecture and
@@ -102,8 +102,6 @@ Create a new file named `.env` in the root of your project and add the following
 content:
 
 ```env
-#NEXT
-NEXT_PUBLIC_SERVER_URL=
 
 #MONGODB
 MONGODB_URL=
