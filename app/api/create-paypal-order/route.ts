@@ -34,9 +34,11 @@ export async function POST(req: Request) {
 
 		const orderResponse = await paypalClient.execute(orderRequest);
 
+		console.log("Order ID:", orderResponse.result?.id);
+
 		return NextResponse.json({ id: orderResponse.result.id });
 	} catch (error) {
-		console.log("[CHECKOUT]", error);
+		console.log("[CREATE_PAYPAL_ORDER]", error);
 		return new NextResponse("Internal server error.", { status: 500 });
 	}
 }
