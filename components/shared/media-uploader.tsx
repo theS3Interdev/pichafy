@@ -75,7 +75,7 @@ export const MediaUploader = ({
 									height={getImageSize(type, image, "height")}
 									src={publicId}
 									alt="image"
-									sizes={"(max-width: 767px) 100vw, 50vw"}
+									sizes={"(max-width: 768px) 100vw, 50vw"}
 									placeholder={dataUrl as PlaceholderValue}
 									className="media-uploader_cldImage"
 								/>

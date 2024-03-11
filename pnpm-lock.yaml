@@ -11,6 +11,9 @@ dependencies:
   '@hookform/resolvers':
     specifier: ^3.3.4
     version: 3.3.4(react-hook-form@7.51.0)
+  '@paypal/checkout-server-sdk':
+    specifier: ^1.0.3
+    version: 1.0.3
   '@paypal/react-paypal-js':
     specifier: ^8.1.4
     version: 8.1.4(react-dom@18.2.0)(react@18.2.0)
@@ -85,6 +88,9 @@ devDependencies:
   '@types/node':
     specifier: ^20
     version: 20.11.25
+  '@types/paypal__checkout-server-sdk':
+    specifier: ^1.0.8
+    version: 1.0.8
   '@types/qs':
     specifier: ^6.9.12
     version: 6.9.12
@@ -489,10 +495,22 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
+  /@paypal/checkout-server-sdk@1.0.3:
+    resolution: {integrity: sha512-UEdq8akEdMz0Vs4qoQFU2gMp8PpyE/HKyMwiZuK4vIWUKl8jfd1fWKjQN5cDFm9NkFUIp5U7h++rdMOVj9WMNA==}
+    engines: {node: '>=8'}
+    dependencies:
+      '@paypal/paypalhttp': 1.0.1
+    dev: false
+
   /@paypal/paypal-js@8.0.2:
     resolution: {integrity: sha512-JbWXxMsTDUE4j+JXAu04qBacjkP6/38lgGC5YKW/FBfU1v3S5EgjfF1cMCGFehcpmsU5T88rkpKDsuftrCkyCA==}
     dependencies:
       promise-polyfill: 8.3.0
+    dev: false
+
+  /@paypal/paypalhttp@1.0.1:
+    resolution: {integrity: sha512-DC7AHxTT7drF6dUi3YaFdPVuT15sIkpD5H2eHmdtFgxM4UanS1o1ZDfMhR9mpxd8o+X6pz2r+EZVRRq+n1cssQ==}
+    engines: {node: '>=4'}
     dev: false
 
   /@paypal/react-paypal-js@8.1.4(react-dom@18.2.0)(react@18.2.0):
@@ -1206,6 +1224,18 @@ packages:
     resolution: {integrity: sha512-TBHyJxk2b7HceLVGFcpAUjsa5zIdsPWlR6XHfyGzd0SFu+/NFgQgMAl96MSDZgQDvJAvV6BKsFOrt6zIL09JDw==}
     dependencies:
       undici-types: 5.26.5
+
+  /@types/paypal__checkout-server-sdk@1.0.8:
+    resolution: {integrity: sha512-PNmNBlcany7Dh42Qb5mkl+KqYfR39aVcalLm3FXHCozKtDyfLE1JAig7C2mANPdC3fmQhdvcs0n3ym6K10CLnw==}
+    dependencies:
+      '@types/paypal__paypalhttp': 1.0.3
+    dev: true
+
+  /@types/paypal__paypalhttp@1.0.3:
+    resolution: {integrity: sha512-Zen2JyaCOPRkPFxXetopbYWsSpi3VlWWYBZKNEXruxp6vzh7f/an/IaeZ23tmd11rg56zYtmXS2e1PfllVRZtQ==}
+    dependencies:
+      '@types/node': 20.11.25
+    dev: true
 
   /@types/prop-types@15.7.11:
     resolution: {integrity: sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==}
