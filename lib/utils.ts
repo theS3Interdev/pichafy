@@ -114,7 +114,7 @@ export const getImageSize = (
 /* doanload image */
 export const download = (url: string, filename: string) => {
 	if (!url) {
-		throw new Error("Resource URL not provided. You need to provide one.");
+		throw new Error("You need to provide a resource URL.");
 	}
 
 	fetch(url)

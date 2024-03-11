@@ -44,75 +44,75 @@ export const navigationLinks = [
 export const plans = [
 	{
 		_id: 1,
-		name: "Free",
+		name: "Starter Package",
 		icon: "/assets/icons/free-plan.svg",
 		price: 0,
-		credits: 20,
+		credits: 10,
 		inclusions: [
 			{
-				label: "20 Free Credits",
+				label: "10 Free Credits",
 				isIncluded: true,
 			},
 			{
-				label: "Basic Access to Services",
+				label: "Access to Services",
 				isIncluded: true,
 			},
 			{
-				label: "Priority Customer Support",
-				isIncluded: false,
+				label: "Customer Support",
+				isIncluded: true,
 			},
 			{
-				label: "Priority Updates",
-				isIncluded: false,
+				label: "Updates",
+				isIncluded: true,
 			},
 		],
 	},
 	{
 		_id: 2,
-		name: "Pro Package",
+		name: "Professional Package",
 		icon: "/assets/icons/free-plan.svg",
-		price: 40,
-		credits: 120,
+		price: 20,
+		credits: 100,
 		inclusions: [
 			{
-				label: "120 Credits",
+				label: "100 Credits",
 				isIncluded: true,
 			},
 			{
-				label: "Full Access to Services",
+				label: "Access to Services",
 				isIncluded: true,
 			},
 			{
-				label: "Priority Customer Support",
+				label: "Customer Support",
 				isIncluded: true,
 			},
 			{
-				label: "Priority Updates",
-				isIncluded: false,
+				label: "Updates",
+				isIncluded: true,
 			},
 		],
 	},
 	{
 		_id: 3,
-		name: "Premium Package",
+		name: "Elite Package",
 		icon: "/assets/icons/free-plan.svg",
-		price: 199,
-		credits: 2000,
+		price: 100,
+		credits: 1000,
 		inclusions: [
 			{
-				label: "2000 Credits",
+				label: "1000 Credits",
 				isIncluded: true,
 			},
 			{
-				label: "Full Access to Services",
+				label: "Access to Services",
 				isIncluded: true,
 			},
 			{
-				label: "Priority Customer Support",
+				label: "Customer Support",
 				isIncluded: true,
 			},
 			{
-				label: "Priority Updates",
+				label: "Updates",
 				isIncluded: true,
 			},
 		],

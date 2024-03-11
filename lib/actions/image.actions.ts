@@ -113,7 +113,7 @@ export async function getAllImages({
 			secure: true,
 		});
 
-		let expression = "folder=imaginify";
+		let expression = "folder=pichafy";
 
 		if (searchQuery) {
 			expression += ` AND ${searchQuery}`;
@@ -143,6 +143,7 @@ export async function getAllImages({
 			.limit(limit);
 
 		const totalImages = await Image.find(query).countDocuments();
+
 		const savedImages = await Image.find().countDocuments();
 
 		return {
