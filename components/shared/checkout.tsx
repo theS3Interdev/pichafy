@@ -50,6 +50,8 @@ export const Checkout = ({
 
 			const approval = await response.json();
 
+			router.refresh();
+
 			console.log("Approval data: ", approval);
 
 			setTimeout(() => {
