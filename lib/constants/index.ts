@@ -71,7 +71,7 @@ export const plans = [
 		_id: 2,
 		name: "Professional Package",
 		icon: "/assets/icons/free-plan.svg",
-		price: 20,
+		price: 30,
 		credits: 100,
 		inclusions: [
 			{
@@ -96,7 +96,7 @@ export const plans = [
 		_id: 3,
 		name: "Elite Package",
 		icon: "/assets/icons/free-plan.svg",
-		price: 100,
+		price: 120,
 		credits: 1000,
 		inclusions: [
 			{
